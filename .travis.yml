@@ -1,0 +1,29 @@
+# --------------------
+# !! NE NYULJ HOZZA !!
+# --------------------
+# Ez a configuracio teszi fel az uj verziokat
+
+language: ruby
+rvm:
+- 2.4.1
+cache: bundler
+install: gem install jekyll
+before_script:
+- git clone https://github.com/szbpsz/text.git tmp
+- cp -r tmp/* ./
+- rm -r -f tmp
+- bundle install
+script: bundle exec jekyll build
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  project: szbpsz-d612a
+  token:
+    secure: RRfuWkZ/rXFrHJI9JDyCVKI4BFLRoGTjybMZ9FSb8uzsJ9nuLLGuiwGkPmRFQ10YvX08QBr8Xy5wpcMwWT+AwFLMW+RjX0Il0MkqXXQTOsISvBcMmuThsSoChSESnGMCw8uMWlcwy9tsGKV0LxhHRxTIuOjbQGUs2MRWzw4GMGBmMqeAeuy94rVWWrNy1UEfddQgmvYJcX8fXxQzlXG/2qOC+hQjSTVUOUQBH77kj4fT5IoO22j1pyoVzzBsL8aK/V/fi+XcmuVBCLNAY8TY9IUCwMBeFnSmxI0bQt1LW5uDakweoEMXZdoXVmRa48YJ7Kqmayy2yjKLUw/oHID2GjwC2bNWDUle4PRjHn96OySPHmel7Q/SKxO/JgAfw+xdOTK4EC1dWDeDrTnHgBK4BPe8lkGHZy4egEJyeEDzAfKQLfI20Yrjns8E4UmVqLMaFdTNDPXBJxe2NKipDk3vicZYo6ym/fl9Td/sQcfkkdV+ebmloNJy/GsDQIMXDEPnP1x5s255ualtGo3G0taxyU8P+MWG3FoiBxInarTarhlHzGlp1dechz0qhpuvsn53eZIoVjNDt+Kapi5kOcb+Dekp1xRtRdN9pWPYSXZC8hiX1oYat5ThKNXJDIc8J3PDvsCtR6PTvWK7Gcnx66vdxfXPkCU503Pa7QlivRxErXs=
+notifications:
+  email:
+    recipients:
+      - nagy.gergely14@gmail.com
