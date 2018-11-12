@@ -1,8 +1,3 @@
-# --------------------
-# !! NE NYULJ HOZZA !!
-# --------------------
-# Ez a configuracio teszi fel az uj verziokat
-
 language: ruby
 rvm:
 - 2.4.1
@@ -22,8 +17,8 @@ deploy:
   provider: firebase
   project: szbpsz-d612a
   token:
-    secure: RRfuWkZ/rXFrHJI9JDyCVKI4BFLRoGTjybMZ9FSb8uzsJ9nuLLGuiwGkPmRFQ10YvX08QBr8Xy5wpcMwWT+AwFLMW+RjX0Il0MkqXXQTOsISvBcMmuThsSoChSESnGMCw8uMWlcwy9tsGKV0LxhHRxTIuOjbQGUs2MRWzw4GMGBmMqeAeuy94rVWWrNy1UEfddQgmvYJcX8fXxQzlXG/2qOC+hQjSTVUOUQBH77kj4fT5IoO22j1pyoVzzBsL8aK/V/fi+XcmuVBCLNAY8TY9IUCwMBeFnSmxI0bQt1LW5uDakweoEMXZdoXVmRa48YJ7Kqmayy2yjKLUw/oHID2GjwC2bNWDUle4PRjHn96OySPHmel7Q/SKxO/JgAfw+xdOTK4EC1dWDeDrTnHgBK4BPe8lkGHZy4egEJyeEDzAfKQLfI20Yrjns8E4UmVqLMaFdTNDPXBJxe2NKipDk3vicZYo6ym/fl9Td/sQcfkkdV+ebmloNJy/GsDQIMXDEPnP1x5s255ualtGo3G0taxyU8P+MWG3FoiBxInarTarhlHzGlp1dechz0qhpuvsn53eZIoVjNDt+Kapi5kOcb+Dekp1xRtRdN9pWPYSXZC8hiX1oYat5ThKNXJDIc8J3PDvsCtR6PTvWK7Gcnx66vdxfXPkCU503Pa7QlivRxErXs=
+    secure: s3wPJVIO6v0woUUGuyOXNrBca5GOJ5OGR8H/TrAAUgwoU5v0suHCCmzvSjRqy6vPXTGJuqntmyeC9eX0gBmMzQMlyWB+QLqmMbBqiXaXVmx8ASMlMCcR/ojNVRJoS2ZODN7okN0kyBRHsppBFENYngfFOfbDZRDZvJNLswQ4eCjDU5hjs5ELgyfzYIjJcn+uo0AApJfRHHcn+SBuNvVCQ2wnGCczkNGwhbsXQbqcP2h0s4Oe3X25QefO0Y3yeQHPCmPHF9SPZd1o9cac6MDlWwTtnsYTxG+ht91k/71mLtg+U30Fdm0xgqyOnl6xkOOce94aHctl0urG+wC9Tl1d+BwFyjPd7OeA0NWsjznN1r54+FBWGNcviQGX735zcJcVTK4tXavLFdXsjQtjyLTr8gYnYD95QCnWxjWQdaM6XRVgqBq+hbRsY6Jf1aIB/W8krHUSeXkwhYQnelBODmBay9pRgPajHzEJIFadI3bbdl+oW/SU6bo0B3IhUajC8qur+wPMGUPoVJ0Bgw+Mw4PuwNqL1SAU0TeezJEqkIalvxXmE7cAHZD/YKRQr3M7uXhV1yfZeiaIKYpPSl/i0rD7eQy/KSr8pQX+sy2CrFGfJ29bvBCpM48LawEGtyFRKJ48oOx4QtpKCycEa7B4OOM/+WTkFGvfWMUX+kTleAPCsc0=
 notifications:
   email:
     recipients:
-      - nagy.gergely14@gmail.com
+    - nagy.gergely14@gmail.com
